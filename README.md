@@ -2,8 +2,19 @@
 
 Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Explainable Audio Classification of Playing Techniques with Layer-wise Relevance Propoagation](https://.pdf), submitted to [IEEE International Conference on Acoustics, Speech and Signal Processing](https://2023.ieeeicassp.org/) (ICASSP), 2023.
 
-## main idea
+## Main idea
 <img src="results/local_maps.png" style="max-width: 250px;"/>
+
+<ul class="bodyColum2"> 
+  <strong>Vibrato</strong> <br>
+  <audio controls height="40px" width="100px">
+     <source src="https://user-images.githubusercontent.com/37775325/200143302-7caa3959-d109-45f0-a5ac-49eb101c9554.mp4" type="audio/mpeg">
+     <embed height="50" width="60" src="https://user-images.githubusercontent.com/37775325/200143302-7caa3959-d109-45f0-a5ac-49eb101c9554.mp4">
+  </audio> <br>
+</ul>
+
+
+
 
 ## How to run
 ### Get code
