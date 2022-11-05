@@ -5,6 +5,8 @@ Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Ex
 ## Main idea
 <img src="results/local_maps.png" style="max-width: 250px;"/>
 
+<audio src="results/Bn-flatt-A4-mf.wav" controls preload></audio>
+
 <ul class="bodyColum2"> 
   <strong>Vibrato</strong> <br>
   <audio controls height="40px" width="100px">
