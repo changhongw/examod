@@ -1,6 +1,8 @@
 # Explainable Audio Models (ExAMod)
 
-Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Explainable Audio Classification of Playing Techniques with Layer-wise Relevance Propoagation](https://.pdf), submitted to [IEEE International Conference on Acoustics, Speech and Signal Processing](https://2023.ieeeicassp.org/) (ICASSP), 2023. Accompany website showing audio examples: [changhongw.github.io/examod](https://changhongw.github.io/publications/examod)
+Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Explainable Audio Classification of Playing Techniques with Layer-wise Relevance Propoagation](https://.pdf), submitted to [IEEE International Conference on Acoustics, Speech and Signal Processing](https://2023.ieeeicassp.org/) (ICASSP), 2023. 
+
+Accompany website showing explanation visualizations and audio examples: [changhongw.github.io/examod](https://changhongw.github.io/publications/examod).
 
 ## How to run
 ### Get code
