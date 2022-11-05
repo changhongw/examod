@@ -8,8 +8,8 @@ Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Ex
 <ul class="bodyColum2"> 
   <strong>Vibrato</strong> <br>
   <audio controls height="40px" width="100px">
-     <source src="https://user-images.githubusercontent.com/changhongw/examod/results/Bn-flatt-A4-mf.wav" type="audio/mpeg">
-     <embed height="50" width="60" src="https://user-images.githubusercontent.com/changhongw/examod/results/Bn-flatt-A4-mf.wav">
+     <source src="https://user-images.githubusercontent.com/changhongw/examod/results/Bn-flatt-A4-mf.mp4" type="audio/mpeg">
+     <embed height="50" width="60" src="https://user-images.githubusercontent.com/changhongw/examod/results/Bn-flatt-A4-mf.mp4">
   </audio> <br>
 </ul>
 
