@@ -14,7 +14,7 @@ Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Ex
 </ul>
 
 
-
+<video src="https://user-images.githubusercontent.com/changhongw/examod/results/Bn-flatt-A4-mf.mp4"></video>
 
 ## How to run
 ### Get code
