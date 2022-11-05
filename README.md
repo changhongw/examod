@@ -18,6 +18,10 @@ Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Ex
 <video src="https://user-images.githubusercontent.com/changhongw/examod/main/results/Bn-flatt-A4-mf.mp4"></video>
 [audio](https://user-images.githubusercontent.com/changhongw/examod/main/results/Bn-flatt-A4-mf.mp4)
 
+https://user-images.githubusercontent.com/changhongw/examod/main/results/Bn-flatt-A4-mf.wav
+
+https://user-images.githubusercontent.com/changhongw/examod/main/results/Bn-flatt-A4-mf.mp4
+
 ## How to run
 ### Get code
 `git clone https://github.com/changhongw/ExAMod.git`
