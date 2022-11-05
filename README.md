@@ -4,15 +4,8 @@ Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Ex
 
 ## Main idea
 <img src="results/local_maps.png" style="max-width: 250px;"/>
+https://user-images.githubusercontent.com/37775325/200143302-7caa3959-d109-45f0-a5ac-49eb101c9554.mp4
 
-<ul class="bodyColum2"> 
-  <strong>Northern goshawk</strong> <br>
-  vibrato <br>
-  <audio controls height="40px" width="100px">
-     <source src="https://raw.githubusercontent.com/changhongw/examod/main/results/Bn-vib-A4-mf.wav" type="audio/mpeg">
-     <embed height="50" width="60" src="https://raw.githubusercontent.com/changhongw/examod/main/results/Bn-vib-A4-mf.wav">
-  </audio> <br>
-</ul>
 
 ## How to run
 ### Get code
