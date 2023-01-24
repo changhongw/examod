@@ -9,7 +9,7 @@ Accompany website showing explanation visualizations and audio examples: [changh
 `git clone https://github.com/changhongw/ExAMod.git`
 
 ### Install dependencies
-`conda create -n myenv python=3.9.7`<br>
+`conda create -n examod python=3.9.7`<br>
 `conda install --file requirements.txt`
 
 ### Data
