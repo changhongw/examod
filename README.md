@@ -10,6 +10,7 @@ Accompany website showing explanation visualizations and audio examples: [changh
 
 ### Install dependencies
 `conda create -n examod python=3.9.7`<br>
+`conda activate examod_icassp`<br>
 `conda install --file requirements.txt`
 
 ### Data
