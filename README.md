@@ -22,12 +22,12 @@ The data split and the corresponding file IDs used in our paper is shown in the 
 
 ### Carrier-modulation feature map extraction
 `python 1_preprocess_feature.py`<br>
-(feature extraction takes around 0.5h on a GPU)
+(feature extraction takes around 0.5 h on one GPU)
 
 ### Playing technique classification
 - train and test network
 `python 2_classification.py`<br>
-(classification with the full scattering feature takes around on 1GPU)
+(classification with the full scattering feature takes around 15 mins on one GPU)
 
 - check classification result
 `3_classification_results.ipynb`
