@@ -2,7 +2,6 @@ import os
 import numpy as np, torch
 from tqdm import tqdm
 import gin
-import fire
 import librosa
 
 from examod.SOLdataset import SOLdatasetModule
@@ -45,7 +44,7 @@ class Scat1DExtractor(Extractor):
                     'J': 13,
                     'T': 2**13,
                     'Q': (8, 2)},
-                freq_min = 32,  # freq below which the modulation not audible
+                freq_min = 32,  # freq below which the modulations not audible
                 sr=44100): 
         super().__init__(output_dir, data_module)
         self.output_dir = output_dir
@@ -91,7 +90,7 @@ class Scat1DExtractor(Extractor):
                 np.save(out_path + '_S1S2', S1S2x.cpu().numpy())
 
 
-def process_SOLdataset(data_dir='../datasets/SOL-0.9HQ-PMT',
+def process_SOLdataset(data_dir='/home/changhongw/datasets/SOL-0.9HQ-PMT',
                       feature='scat1d_s1s2', out_dir='SOL-0.9HQ-PMT/'):
     """ extract SOL-PMT dataset scattering coefficients and stats, and save to disk
     Args:
@@ -99,11 +98,11 @@ def process_SOLdataset(data_dir='../datasets/SOL-0.9HQ-PMT',
         feature: 'scat1d'
         output_dir_id: optional identifier to append to the output dir name
     """
-    # output_dir = os.path.join(os.getcwd(), fix_path_sep(feature + out_dir_id))
+
     output_dir = os.path.join(os.getcwd(), out_dir + feature.split('_')[0])
     make_directory(out_dir)
     make_directory(output_dir)
-    data_module = SOLdatasetModule(data_dir, batch_size=16, feature='',
+    data_module = SOLdatasetModule(data_dir, batch_size=32, feature='',
                                     out_dir_to_skip=output_dir)
     data_module.setup()
 
@@ -113,8 +112,5 @@ def process_SOLdataset(data_dir='../datasets/SOL-0.9HQ-PMT',
     extractor.run()
     extractor.stats()
 
-def main():
-    fire.Fire(process_SOLdataset)
-
 if __name__ == "__main__":
-    main()
+    process_SOLdataset()

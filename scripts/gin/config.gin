@@ -1,8 +1,8 @@
 
 SOL_DATA_DIR = 'SOL-0.9HQ-PMT/'
-SOL_CSV = '../datasets/SOL-0.9HQ-PMT/SOL-0.9HQ-PMT_meta.csv'
+SOL_CSV = '/home/changhongw/datasets/SOL-0.9HQ-PMT/SOL-0.9HQ-PMT_meta.csv'
 
-FEATURE = 'scat1d_s1s2'
+FEATURE = 'scat1d_s1'
 ACCURACY_AVG = 'weighted'
 
 SOLdatasetClassifier.average = %ACCURACY_AVG

@@ -13,7 +13,7 @@ class SOLdatasetClassifier(LightningModule):
                  lr=1e-3,
                  average='weighted',
                  stats_dir='SOL-0.9HQ-PMT/',
-                 csv='../datasets/SOL-0.9HQ-PMT/SOL-0.9HQ-PMT_meta.csv',
+                 csv='/home/changhongw/datasets/SOL-0.9HQ-PMT/SOL-0.9HQ-PMT_meta.csv',
                  feature='scat1d_s1s2',
                  n_batches_train = None):
         super().__init__()
@@ -134,7 +134,7 @@ class SOLdatasetClassifier(LightningModule):
         y = torch.cat([x['y'] for x in outputs])
         acc_macro = self.acc_metric_macro(logits, y)
         
-        np.save('results/testresluts_truth_pred_' + self.feature_spec + '.npy', np.vstack((y, np.argmax(logits, -1))))
+        np.save(os.getcwd() + '/results/testresluts_truth_pred_' + self.feature_spec + '.npy', np.vstack((y, np.argmax(logits, -1))))
 
         bin_counts = torch.bincount(y)
         classwise_acc = [torch.zeros(n) for n in bin_counts]

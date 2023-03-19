@@ -14,11 +14,11 @@ gin.enter_interactive_mode()
 @gin.configurable
 class SOLdataset(Dataset):
     def __init__(self,
-                 data_dir='../datasets/SOL-0.9HQ-PMT',
-                 csv='../datasets/SOL-0.9HQ-PMT/SOL-0.9HQ-PMT_meta.csv',
+                 data_dir='/home/changhongw/datasets/SOL-0.9HQ-PMT',
+                 csv='/home/changhongw/datasets/SOL-0.9HQ-PMT/SOL-0.9HQ-PMT_meta.csv',
                  subset='training',
                  feature='scat1d_s1s2',
-                 out_dir_to_skip=None,  # resuming mechanism
+                 out_dir_to_skip=None,
                  c = 1e-1,
                  ):
         super().__init__()
@@ -46,13 +46,13 @@ class SOLdataset(Dataset):
         
         self.df = df.loc[df['subset'] == subset]
         self.df = self.df.reset_index(drop = True)
-
+                
         if (self.out_dir_to_skip is not None
                 and os.path.isdir(self.out_dir_to_skip)):
             self.out_names_done = os.listdir(self.out_dir_to_skip)
         else:
             self.out_names_done = None
-                
+
     def build_fname(self, df_item, ext='.npy'):
         filename = df_item['file_name'].split('.')[0]
         
@@ -100,7 +100,7 @@ class SOLdataset(Dataset):
 @gin.configurable
 class SOLdatasetModule(pl.LightningDataModule):
     def __init__(self,
-                 data_dir: str = '../datasets/SOL-0.9HQ-PMT',
+                 data_dir: str = '/home/changhongw/datasets/SOL-0.9HQ-PMT',
                  batch_size: int = 32,
                  feature='scat1d_s1s2',
                  out_dir_to_skip=None):
@@ -112,14 +112,14 @@ class SOLdatasetModule(pl.LightningDataModule):
 
     def setup(self, stage: Optional[str] = None):
         self.train_ds = SOLdataset(self.data_dir, subset='training',
-                                      feature=self.feature,
-                                      out_dir_to_skip=self.out_dir_to_skip)
+                                    feature=self.feature,
+                                    out_dir_to_skip=self.out_dir_to_skip)
         self.val_ds = SOLdataset(self.data_dir, subset='validation',
                                     feature=self.feature,
                                     out_dir_to_skip=self.out_dir_to_skip)
         self.test_ds = SOLdataset(self.data_dir, subset='test',
-                                     feature=self.feature,
-                                     out_dir_to_skip=self.out_dir_to_skip)
+                                    feature=self.feature,
+                                    out_dir_to_skip=self.out_dir_to_skip)
 
     def train_dataloader(self):
         return DataLoader(self.train_ds,
