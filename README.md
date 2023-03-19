@@ -2,8 +2,6 @@
 
 Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. **Explainable Audio Classification of Playing Techniques with Layer-wise Relevance Propoagation**, submitted to [IEEE International Conference on Acoustics, Speech and Signal Processing](https://2023.ieeeicassp.org/) (ICASSP), 2023. 
 
-Accompany website showing explanation visualizations and audio examples: [changhongw.github.io/publications/examod](https://changhongw.github.io/publications/examod.html).
-
 ## How to run
 ### Get code
 `git clone https://github.com/changhongw/ExAMod.git`
