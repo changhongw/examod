@@ -4,7 +4,7 @@ Code for the paper: Changhong Wang, Vincent Lostanlen, and Mathieu Lagrange. [Ex
 
 ## How to run
 ### Get code
-`git clone https://github.com/changhongw/ExAMod.git`
+`git clone https://github.com/changhongw/examod.git`
 
 ### Install dependencies
 `conda env create -f environment.yml`<br>
@@ -23,11 +23,11 @@ The data split and the corresponding file IDs used in our paper is shown in the 
 (feature extraction takes around 0.5 h on one GPU)
 
 ### Playing technique classification
-- train and test network
+- Train and test network
 `python 2_classification.py`<br>
 (classification with the full scattering feature takes around 15 mins on one GPU)
 
-- check classification result
+- Check classification result
 `3_classification_results.ipynb`
 
 ### Explanation maps
